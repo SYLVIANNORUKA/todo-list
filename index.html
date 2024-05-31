@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo list</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="todo_list">
+    <!--first section-->
+    <section class="welcome">
+      <h2 class="welcome-text"> Hello Again,</h2>
+      <input type="text" id="firstName" placeholder="Name here"/>
+    </section>
+      <!---second section-->
+      <section class="new_todo">
+         <h3>TODO LIST FOR TODAY</h3>
+        <form id="create_todo">
+        <h4>what do you have planned for today?</h4>
+        <input type="text" id="content" name="content" placeholder="e.g. Go to the gym"/>
+
+        <H4>Pick a category</H4>
+
+        <div class="categories">
+        <!--Business category-->
+        
+          <label>
+            <input type="radio" name= "category" value="business" id="category1"/>
+            <span class="stretch business"></span>
+            <div>Business</div>
+          </label>
+
+          <!--personal category-->
+        
+          <label>
+            <input type="radio" name= "category"value="personal" id="category2"/>
+            <span class="stretch personal"></span>
+            <div>Personal</div>
+          </label>
+        </div>
+
+        <button class="add-task" type="submit" value="Add Task">Add Task</button>         
+        </form>
+
+        </section>
+
+
+         <section class="todo_task">
+          <h3>TODO LIST</h3>
+         <!--<DIV class="list" id="todo">
+            
+            <div class="todo_item done">
+              
+              <label>
+                <input type="checkbox"/>
+                <span class="stretch business"></span>
+              </label>
+               <div class="todo_content">
+               <input type="text" value="Finish assignment" readonly>
+               </div>
+            </div>
+          
+
+            <div class="todo_actions">
+              <button class="edit_button">Edit</button>
+              <button class="delete_button">Delete</button>
+            </div>
+          </DIV>
+          --> 
+
+         </section>
+  </main>
+  <script src="./script.js"></script>
+</body>
+</html>
